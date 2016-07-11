@@ -1,21 +1,19 @@
 # How it works?
 
-# 1) download all R files and "wgrib.exe" & "cygwin1.dll" in a folder called "data" in c:/
+#### 1) download all R files and "wgrib.exe" & "cygwin1.dll" in a folder called "data" in c:/
 
-# 2) then open R studio, set working directory as "c:/data" and import our functions
+#### 2) then open R studio, set working directory as "c:/data" and import our functions
 
-setwd("c:/data")
-source("Extract_GRIB.R")
+ 	setwd("c:/data")
+ 	source("Extract_GRIB.R")
 
-# 3) extract temperature, Specific humidity, pressure and compute the dew point at a certain year, day and time
-#    from the "GLDAS_NOAH025SUBP_3H" dataset (GRIB) 
-#    For example, after running
+#### 3) extract temperature, Specific humidity, pressure and compute the dew point at a certain year, day and time from the "GLDAS_NOAH025SUBP_3H" dataset (GRIB) For example, after running
 
-Extract_GRIB("2010",68,"09")
+	Extract_GRIB("2010",68,"09")
 
-# A file named "GLDAS_NOAH025SUBP_3H_2010_068_09.Rdata" will be created in "c:/data"
-# if we open this file by R studio, 4 matrices will be loaded in working environment, they are:
-# "Tt","q","p",and "dew", meaning global temperature, Specific humidity, pressure and dew point data at 9:00Z in the 68th day of 2010.
+#### A file named "GLDAS_NOAH025SUBP_3H_2010_068_09.Rdata" will be created in "c:/data"
+#### if we open this file by R studio, 4 matrices will be loaded in working environment, they are:
+#### "Tt","q","p",and "dew", meaning global temperature, Specific humidity, pressure and dew point data at 9:00Z in the 68th day of 2010.
 
 # 4) if we want to extract the data for a whole year, we can run loops. For example, the 2006
 

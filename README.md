@@ -26,6 +26,6 @@ time<-c("00","03","06","09","12","15","18","21") # all times for one-day
    }
  }
  
- # After the program ending, (8*365=) 2920 Rdata files will be created in "c:/data"
+# After the program ending, (8*365=) 2920 Rdata files will be created in "c:/data"
  
- ### To be continued ###
+### To be continued ###

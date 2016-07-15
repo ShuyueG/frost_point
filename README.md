@@ -40,4 +40,7 @@ First, it runs the `Get_missing` function to check data files' completeness and 
 
 	complement_data("d:/data/2010/", 2006,1, 365)
 
-If there is no missing file for this year, it will return
+If there is no missing file for this year, it will return words: 
+	"The dataset is already complete."
+	
+	# To be continued...

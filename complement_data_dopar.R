@@ -1,10 +1,16 @@
-# This function is to complement the missing Rdata files for one year
+# the parallel computation version of code to complement the missing Rdata files for one year
 # Many reasons could cause data missing, such the web connection problem, disk problem,
 # unforeseen parallel computation problem, etc.
 # Hence, we need to check data files' completeness and complement the missing ones
 # using the "foreach" and "doParallel" packages
 # input & output: same as the complement_data function, see in complement_data.R
-complement_data_dopar <- function(folder, year, st_day, ed_day) {
+
+# initialize
+  year<-2010
+  st_day<-1
+  ed_day<-365
+  folder<-"c:/data/2010/"
+
   source("Get_missing.R")
   source("Extract_GRIB.R")
   # check the missing files
@@ -47,4 +53,3 @@ complement_data_dopar <- function(folder, year, st_day, ed_day) {
   } else{
     return("The dataset is still incomplete, please check or run it again.")
   }
-}

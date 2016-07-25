@@ -27,7 +27,7 @@ if we want to extract the data for a whole year, we can run the function `GetYea
  
 After the program ending, (8*365=) 2920 Rdata files will be created in `c:/data/2006/`
  
-###### (4.1) Get Rdata files for one year faster
+##### (4.1) Get Rdata files for one year faster
 to speed the program up by using parallel computation
 we can run the codes in `GetYearData_dopar.R`. For example, to 2010
 
@@ -50,7 +50,7 @@ First, it runs the `Get_missing` function to check data files' completeness and 
 
 If there is no missing file for this year, it will return words: "The dataset is already complete."
 
-###### (5.1) Complement the missing Rdata files faster
+##### (5.1) Complement the missing Rdata files faster
 to speed the program up by using parallel computation
 we can run the codes in `complement_data_dopar.R`. For example, to 2010
 
@@ -70,7 +70,7 @@ For example, we have 2920 Rdata files for 2010 in the folder `c:/data/2010/` and
 
 When the program ends, we have 2920 Rdata files with frost points in folder `2010FP`.
 
-###### (6.1) Compute frost point faster
+##### (6.1) Compute frost point faster
 Similarly, we can speed the program up by using parallel computation.
 we can run the codes in `Get_frost_dopar.R`. For example, to 2010
 
